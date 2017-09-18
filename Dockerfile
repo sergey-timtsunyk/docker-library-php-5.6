@@ -14,5 +14,5 @@ RUN docker-php-ext-enable xdebug
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/cli/php.ini
 
 RUN printf "%s\n" \
-        "date.timezone = \"America/Chicago\"" \
+        "date.timezone = \"UTC"" \
         >> /usr/local/etc/php/conf.d/timezone.ini
